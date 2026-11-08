@@ -13,3 +13,17 @@ function setup(){
     });
   }
 }
+
+function draw () {
+  background(240, 240, 225);
+
+  noStroke();
+  FileList(100, 145, 85);
+
+  for (let g of grass) {
+    let wind = sin(
+      frameCount * 0.035 * g.speed + g.phase
+    );
+    
+  }
+}
